@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <meta name="author" content="alex hart">
+    <meta name="description" content="W3 Demo">
+
+    <title>W3 | TheLastOfUs</title>
+
+    <!--IN-DOCUMENT CSS BELOW-->
+    <style>
+        /*we are now writing in CSS in this element*/
+
+        /*selecting elements by their tag type*/
+        body {
+            /*property: value*/
+            background-color: grey;
+        }
+
+        div {
+            /*these style changes will apply to ALL divs in the page!
+            when selecting by tag type, all tags of that type are affected*/
+            border:1px solid black;
+            padding:10px; /*applies to all 4 sides, adds space between content and border*/
+            margin:10px; /*adds space between border and other elements, applies to all 4 sides*/
+        }
+
+        /*selecting an element by its id*/
+
+        #wrapper {
+            width:980px;
+            margin:auto; /*auto equal left and right space applied when you resize the page in the browser*/
+            background-color:rgb(39, 39, 39);
+            color:white; /*font color*/
+        }
+
+        /*selecting a GROUP by class*/
+
+        .border {
+            border:1px solid darkred;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <!--#wrapper div to wrap around all content of the page-->
+    <div id="wrapper">
+
+        <!--header-->
+        <div id="header" class="border fancy">
+            <h1 id="title">The Last of Us</h1>
+        </div>
+        <!--nav-->
+        <div id="nav">
+            <!--use relative link paths for pages inside of your site-->
+            <a href="index.html" class="link">HOME</a>
+            <a href="about.html" class="link">ABOUT</a>
+            <a href="people.html" class="link">PEOPLE</a>
+            <a href="places.html" class="link">PLACES</a>
+        </div>
+        <!--content-->
+        <div id="content">
+            <h2>People Page</h2>
+
+        </div>
+        <!--footer-->
+        <div id="footer" class="border">
+            <p>&copy; ALEX HART | SE111 | SPRING 2025</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
