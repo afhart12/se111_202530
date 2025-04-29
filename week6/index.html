@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W6 Pay Calculator</title>
+
+    <meta name="author" content="Alex Hart">
+    <meta name="description" content="W6 Pay Calculator">
+</head>
+<body>
+    <h1>Week 6 Pay Calculator</h1>
+
+    <h3>Alex Hart</h3>
+
+    <script>
+        var hrPay = prompt(`Please enter your hourly pay rate.`)
+        var hrsWorked = prompt(`Please enter your hours worked in the last two weeks.`)
+        hrPay = Number(hrPay)
+        hrsWorked = Number(hrsWorked)
+
+        var gross = hrPay * hrsWorked
+        var tax = gross * 0.2
+        var net = gross - tax
+
+        console.log(`Gross Pay: $${gross.toFixed(2)}`)
+        console.log(`Uncle Sam's Share: $${tax.toFixed(2)}`)
+        console.log(`Net Pay: $${net.toFixed(2)}`)
+
+        alert(`Gross Pay: $${gross.toFixed(2)}\n Uncle Sam's Share: $${tax.toFixed(2)}\n Net Pay: $${net.toFixed(2)}`)
+
+
+    </script>
+</body>
+</html>
