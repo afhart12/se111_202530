@@ -87,35 +87,35 @@
         //first [] --> point containing the array you are accessing data from (row/record)
         //second [] --> which piece of data (column/field)
 
-       console.log(`KT's childhood dream car was ${cars[0][4]}'s ${cars[2][4]} ${cars[1][4]}`)
+    console.log(`KT's childhood dream car was ${cars[0][4]}'s ${cars[2][4]} ${cars[1][4]}`)
 
 
        //create a new object
-       var person1 = {
-           first: `Katie`,
-           last: `Truchon`,
-           hasPets: true, 
-           height: 64,
-           classes: [`SE111`, `VGD129`, `GMW251`],
-           pets: {dogs: ['George', 'Marlowe'], cats: [`Jack`]},
-           greeting: function(){alert(`Hi there ${this.first} ${this.last}!`)}
-       }
+    var person1 = {
+        first: `Katie`,
+        last: `Truchon`,
+        hasPets: true, 
+        height: 64,
+        classes: [`SE111`, `VGD129`, `GMW251`],
+        pets: {dogs: ['George', 'Marlowe'], cats: [`Jack`]},
+        greeting: function(){alert(`Hi there ${this.first} ${this.last}!`)}
+    }
 
-       console.log(person1)
-       console.log(person1.height)
-       console.log(person1.classes)
-       console.log(person1.classes[0])
-       console.log(person1.pets.dogs[1])
-       person1.greeting()
+    console.log(person1)
+    console.log(person1.height)
+    console.log(person1.classes)
+    console.log(person1.classes[0])
+    console.log(person1.pets.dogs[1])
+    person1.greeting()
 
-       var person2 = {
-           first: `Antonio`,
-           last: `Martinez`,
-           hasPets: true, 
-           height: 70,
-           classes: [`SE111`],
-           pets: {dogs: [], cats: [`Tadej`]},
-           greeting: function(){alert(`Hi there ${this.first} ${this.last}!`)}
+    var person2 = {
+       first: `Antonio`,
+       last: `Martinez`,
+        hasPets: true, 
+        height: 70,
+        classes: [`SE111`],
+        pets: {dogs: [], cats: [`Tadej`]},
+        greeting: function(){alert(`Hi there ${this.first} ${this.last}!`)}
        }
 
        console.log(person2)
